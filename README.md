@@ -6,7 +6,7 @@
 
 ## 🎥 Video de demostración
 
-🔗 **Enlace:** Pendiente de agregar
+🔗 **Enlace:** https://itlaedudo-my.sharepoint.com/:f:/g/personal/20240860_itla_edu_do/IgAjXKJRUZPHRroU2cNi8M5FASWgwDIV7F8QrMwoajlIe7I?e=DSzE1S
 
 ---
 
