@@ -1,0 +1,72 @@
+FORTIGATE SERVIDOR
+Infraestructura 1 - VPN Site-to-Site
+TSI-203 Seguridad de Redes
+
+Estudiante: Jennifer López
+Matrícula: 20240860
+
+========================================
+RED DE SERVIDORES
+========================================
+
+Red SERVER: 10.86.1.0/28
+Gateway: 10.86.1.1
+Servidor: 10.86.1.2
+
+========================================
+WAN
+========================================
+
+IP pública simulada: 200.20.86.2
+Peer remoto: 200.20.86.1
+
+========================================
+VPN SITE-TO-SITE
+========================================
+
+Nombre del túnel: VPN-SITE
+Tipo: Route-Based VPN
+IKE Version: IKEv2
+
+Autenticación:
+Pre-Shared Key
+
+Cifrado:
+AES256
+
+Autenticación/Hash:
+SHA256
+
+Red local:
+10.86.1.0/28
+
+Red remota:
+10.86.0.0/25
+
+========================================
+ENRUTAMIENTO
+========================================
+
+Destino:
+10.86.0.0/25
+
+Interfaz:
+VPN-SITE
+
+========================================
+VALIDACIÓN
+========================================
+
+Se verificó el establecimiento del túnel VPN-SITE
+entre ambos FortiGate.
+
+El túnel presentó selectores activos y tráfico
+RX/TX.
+
+Se realizaron pruebas de conectividad entre
+la red SERVER 10.86.1.0/28 y la red USER
+10.86.0.0/25.
+
+Las pruebas de ping fueron satisfactorias y se
+comprobó el funcionamiento del enrutamiento
+a través del túnel VPN.
