@@ -1,0 +1,70 @@
+FORTIGATE USUARIO
+Infraestructura 1 - VPN Site-to-Site
+TSI-203 Seguridad de Redes
+
+Estudiante: Jennifer López
+Matrícula: 20240860
+
+========================================
+RED LOCAL
+========================================
+
+Red USER: 10.86.0.0/25
+Gateway: 10.86.0.1
+PC-USUARIO: 10.86.0.10
+
+========================================
+WAN
+========================================
+
+IP pública simulada: 200.20.86.1
+Peer remoto: 200.20.86.2
+
+========================================
+VPN SITE-TO-SITE
+========================================
+
+Nombre del túnel: VPN-SITE
+Tipo: Route-Based VPN
+IKE Version: IKEv2
+
+Autenticación:
+Pre-Shared Key
+
+Cifrado:
+AES256
+
+Autenticación/Hash:
+SHA256
+
+Red local:
+10.86.0.0/25
+
+Red remota:
+10.86.1.0/28
+
+========================================
+ENRUTAMIENTO
+========================================
+
+Destino:
+10.86.1.0/28
+
+Interfaz:
+VPN-SITE
+
+========================================
+VALIDACIÓN
+========================================
+
+El túnel VPN-SITE fue establecido correctamente.
+
+Se verificó comunicación entre la red USER
+10.86.0.0/25 y la red SERVER 10.86.1.0/28.
+
+Las pruebas de ping entre ambos extremos fueron
+satisfactorias.
+
+También se verificó el comportamiento del tráfico
+al deshabilitar y volver a habilitar la ruta
+correspondiente al túnel VPN.
